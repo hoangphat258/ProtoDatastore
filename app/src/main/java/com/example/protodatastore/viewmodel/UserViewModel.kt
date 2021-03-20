@@ -1,8 +1,9 @@
-package com.example.protodatastore.data
+package com.example.protodatastore.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+import com.example.protodatastore.data.User
 import com.example.protodatastore.service.UserPreferenceManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

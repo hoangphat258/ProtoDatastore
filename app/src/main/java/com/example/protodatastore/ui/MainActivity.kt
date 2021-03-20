@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import com.example.protodatastore.R
-import com.example.protodatastore.data.UserViewModel
+import com.example.protodatastore.viewmodel.UserViewModel
 import com.example.protodatastore.service.UserPreferenceManager
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         userPreferenceManager = UserPreferenceManager(applicationContext)
-        userViewModel = UserViewModel(application)
+        userViewModel =
+            UserViewModel(application)
         initView()
         setupObserver()
     }
